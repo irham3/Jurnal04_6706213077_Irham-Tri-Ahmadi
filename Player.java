@@ -13,6 +13,6 @@ public class Player {
 
     @Override
     public String toString() {
-        return judulLagu + '(' + namaPenyanyi + ')';
+        return judulLagu + " (" + namaPenyanyi + ')';
     }
 }
