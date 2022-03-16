@@ -17,13 +17,13 @@ public class Main {
             pilihan = input.nextInt();
 
             switch (pilihan) {
-                case 1:
+                case 1 -> {
                     System.out.println("\nMasukkan judul lagu & nama penyanyi");
                     String judulLagu = input.next();
                     String namaPenyanyi = input.next();
                     listLagu.add(new Player(judulLagu, namaPenyanyi));
-                    break;
-                case 2:
+                }
+                case 2 -> {
                     System.out.println("\nHapus lagu di list terakhir? (y/n)");
                     if (input.next().equalsIgnoreCase("y"))
                         listLagu.removeLast();
@@ -37,8 +37,8 @@ public class Main {
                                 iter1.remove();
                         }
                     }
-                    break;
-                case 3:
+                }
+                case 3 -> {
                     ListIterator<Player> iter2 = listLagu.listIterator();
                     System.out.println("\nLagu diputar maju");
                     while (iter2.hasNext()) {
@@ -48,9 +48,9 @@ public class Main {
                     while (iter2.hasPrevious()) {
                         System.out.println(iter2.previous());
                     }
-                    break;
-                default:
-                    break;
+                }
+                default -> {
+                }
             }
         } while (pilihan != 4);
 

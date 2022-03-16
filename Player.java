@@ -1,6 +1,6 @@
 public class Player {
-    private String judulLagu;
-    private String namaPenyanyi;
+    private final String judulLagu;
+    private final String namaPenyanyi;
 
     public Player(String judulLagu, String namaPenyanyi) {
         this.judulLagu = judulLagu;
